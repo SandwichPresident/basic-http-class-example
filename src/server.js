@@ -9,7 +9,11 @@ const onRequest = (request, response) => {
     console.log(request.url);
     if(request.url === '/page2') {
         responses.getClient(request, response);
-    }else {
+    }
+    else if(request.url === '/message') {
+        responses.getMessage(request, response);
+    }
+    else {
         responses.getIndex(request,response);
     }
     

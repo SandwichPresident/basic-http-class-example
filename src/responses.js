@@ -12,6 +12,12 @@ const sendPage = (request, response, page) => {
 
 }
 
+const getMessage = (request, response) => {
+    response.writeHead(200, { 'Content-Type': 'text/plain' });
+    response.write('Hello World');
+    response.end();
+}
+
 
 const getIndex = (request, response) => {
     sendPage(request, response, index);
@@ -27,6 +33,7 @@ module.exports = {
     getIndex,
     getClient,
     sendPage,
+    getMessage,
 }
 
 
