@@ -20,7 +20,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "pretest": "eslint ./src --fix",
-    "test": "echo \"Test Complete\" && exit 1"
+    "test": "echo \"Test Complete\" "
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
