@@ -14,6 +14,9 @@ const onRequest = (request, response) => {
         case '/message':
             responses.getMessage(request, response);
             break;
+        case '/styles.css':
+            responses.getCSS(request, response);
+            break;
         default:
             responses.getIndex(request, response);
             break;
